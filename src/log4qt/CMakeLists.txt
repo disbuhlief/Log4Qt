@@ -228,6 +228,7 @@ set_target_properties(log4qt PROPERTIES SOVERSION ${Log4Qt_VERSION_MAJOR}.${Log4
 # Install the whole stuff
 #
 install(TARGETS log4qt EXPORT log4qt_targets
+                       COMPONENT Library
                        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
                        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
                        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
