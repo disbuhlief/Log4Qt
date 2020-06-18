@@ -21,4 +21,3 @@ cd $BUILD_DIR
 
 cmake3 ..
 cmake3 --build . --target package
-cp Log4Qt-1.4.2-1.x86_64.rpm ../ 
