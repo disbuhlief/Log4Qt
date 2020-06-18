@@ -234,7 +234,7 @@ install(TARGETS log4qt EXPORT log4qt_targets
                        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
                        INCLUDES DESTINATION include
                        )
-install(FILES ${log4qt_HDRS}         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt)
-install(FILES ${log4qt_HDRS_helpers} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt/helpers)
-install(FILES ${log4qt_HDRS_spi}     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt/spi)
-install(FILES ${log4qt_HDRS_varia}   DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt/varia)
+install(FILES ${log4qt_HDRS}         COMPONENT Devel DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt)
+install(FILES ${log4qt_HDRS_helpers} COMPONENT Devel DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt/helpers)
+install(FILES ${log4qt_HDRS_spi}     COMPONENT Devel DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt/spi)
+install(FILES ${log4qt_HDRS_varia}   COMPONENT Devel DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/log4qt/varia)

@@ -132,7 +132,7 @@ install(EXPORT log4qt_targets
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     NAMESPACE Log4Qt::
     FILE Log4QtTargets.cmake
-    COMPONENT Common
+    COMPONENT Devel
 )
 configure_file(
     "${Log4Qt_MODULE_DIR}/Log4QtConfig.cmake.in"
@@ -148,7 +148,7 @@ install(FILES
     "${Log4Qt_BINARY_DIR}/Log4QtConfig.cmake"
     "${Log4Qt_BINARY_DIR}/Log4QtConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-    COMPONENT Common
+    COMPONENT Devel
 )
 
 #
